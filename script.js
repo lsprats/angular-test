@@ -9,6 +9,7 @@ angular.module('listasuper', [])
 
         	$scope.items.push({text: $scope.nuevoItem, add: false});
         	$scope.nuevoItem = '';
+        	alert('item agregado');
 
         };
 
