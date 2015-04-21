@@ -15,6 +15,10 @@
         <span class="item-{{item.add}}">{{item.text}}</span>
       </li>
     </ul>
+    <form ng-submit="agregarItem()">
+      <input type="text" size='35' placeholder="Ingresar nuevo Item" ng-model="nuevoItem">
+      <button class="btn btn-primary">Agregar</button>
+    </form>
   </div>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
 <script src="script.js"></script>
