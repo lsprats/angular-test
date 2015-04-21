@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Test Angular.js</title>
+  <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body ng-app="listasuper">
+  <h2>Lista supermercado</h2>
+  <div ng-controller='ControladorLista'>
+    <ul class="unstyled">
+      <li ng-repeat='item in items'>
+        <input type="checkbox" ng-model='item.add'>
+        <span class="item-{{item.add}}">{{item.text}}</span>
+      </li>
+    </ul>
+  </div>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
